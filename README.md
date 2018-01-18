@@ -1,1 +1,2 @@
-# semanticWebInferencing1
+# semanticWebInferencing
+semanticWebInferencing
