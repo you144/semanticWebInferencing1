@@ -1,0 +1,2 @@
+
+The hasChild values of the nick instance: 

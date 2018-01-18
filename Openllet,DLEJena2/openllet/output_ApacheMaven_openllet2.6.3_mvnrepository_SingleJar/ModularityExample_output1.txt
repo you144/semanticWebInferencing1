@@ -1,0 +1,2 @@
+The ontology contains 4529 axioms, 2748 classes, and 413 properties
+The module contains 139 axioms, 81 classes, and 21 properties

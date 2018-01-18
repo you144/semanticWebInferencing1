@@ -1,0 +1,10 @@
+engines:
+  fixme:
+    enabled: false
+  pmd:
+    enabled: true
+    channel: "beta"
+
+ratings:
+  paths:
+  - "**.java"

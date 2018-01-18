@@ -1,0 +1,4 @@
+http://jena.apache.org/download/index.cgi
+download "apache-jena-3.4.0.zip"
+then look in apache-jena-3.4.0\lib\
+

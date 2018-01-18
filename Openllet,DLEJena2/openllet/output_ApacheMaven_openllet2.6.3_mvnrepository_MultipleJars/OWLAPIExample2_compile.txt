@@ -1,0 +1,4 @@
+openllet\examples\OWLAPIExample2.java:74: error: incompatible types: OWLReasoner cannot be converted to OpenlletReasoner
+		final OpenlletReasoner r = h.getReasoner();
+		                                        ^
+1 error

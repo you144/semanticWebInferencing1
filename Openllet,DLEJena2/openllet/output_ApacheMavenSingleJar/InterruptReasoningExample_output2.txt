@@ -1,0 +1,37 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2018-01-18 16:32:47 SEVERE openllet.shared.tools.Log error 
+openllet.core.exceptions.TimeoutException: Running time of realize exceeded timeout of 1000
+	at openllet.core.utils.Timer.check(Timer.java:214)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1343)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1366)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1366)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1366)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1366)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1366)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcepts(CDOptimizedTaxonomyBuilder.java:1327)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realize(CDOptimizedTaxonomyBuilder.java:1187)
+	at openllet.core.KnowledgeBaseImpl.realize(KnowledgeBaseImpl.java:2391)
+	at openllet.jena.PelletInfGraph.realize(PelletInfGraph.java:293)
+	at openllet.examples.InterruptReasoningExample.realize(InterruptReasoningExample.java:205)
+	at openllet.examples.InterruptReasoningExample.main(InterruptReasoningExample.java:126)
+
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at openllet.examples.InterruptReasoningExample.query(InterruptReasoningExample.java:231)
+	at openllet.examples.InterruptReasoningExample.main(InterruptReasoningExample.java:128)
+Caused by: java.lang.NullPointerException
+	at org.apache.jena.query.ARQ.isTrue(ARQ.java:634)
+	at org.apache.jena.sparql.lang.ParserBase.<init>(ParserBase.java:291)
+	at org.apache.jena.sparql.lang.SPARQLParserBase.<init>(SPARQLParserBase.java:43)
+	at org.apache.jena.sparql.lang.sparql_11.SPARQLParser11Base.<init>(SPARQLParser11Base.java:22)
+	at org.apache.jena.sparql.lang.sparql_11.SPARQLParser11.<init>(SPARQLParser11.java:4974)
+	at org.apache.jena.sparql.lang.ParserSPARQL11.perform(ParserSPARQL11.java:91)
+	at org.apache.jena.sparql.lang.ParserSPARQL11.parse$(ParserSPARQL11.java:52)
+	at org.apache.jena.sparql.lang.SPARQLParser.parse(SPARQLParser.java:34)
+	at org.apache.jena.query.QueryFactory.parse(QueryFactory.java:147)
+	at org.apache.jena.query.QueryFactory.create(QueryFactory.java:79)
+	at org.apache.jena.query.QueryFactory.create(QueryFactory.java:52)
+	at org.apache.jena.query.QueryFactory.create(QueryFactory.java:40)
+	at openllet.examples.InterruptReasoningExample$WINE.<clinit>(InterruptReasoningExample.java:102)
+	... 2 more

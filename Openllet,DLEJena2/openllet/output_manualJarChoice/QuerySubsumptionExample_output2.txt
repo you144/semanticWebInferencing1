@@ -1,0 +1,48 @@
+log4j:WARN No appenders could be found for logger (Jena).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" org.apache.jena.atlas.web.HttpException: org.apache.http.conn.HttpHostConnectException: Connect to owldl.com:80 [owldl.com/207.7.108.125] failed: Connection timed out: connect
+	at org.apache.jena.riot.web.HttpOp.exec(HttpOp.java:1088)
+	at org.apache.jena.riot.web.HttpOp.execHttpGet(HttpOp.java:301)
+	at org.apache.jena.riot.web.HttpOp.execHttpGet(HttpOp.java:360)
+	at org.apache.jena.riot.RDFParser.openTypedInputStream(RDFParser.java:329)
+	at org.apache.jena.riot.RDFParser.parseURI(RDFParser.java:247)
+	at org.apache.jena.riot.RDFParser.parse(RDFParser.java:241)
+	at org.apache.jena.riot.RDFParserBuilder.parse(RDFParserBuilder.java:417)
+	at org.apache.jena.riot.RDFDataMgr.parseFromURI(RDFDataMgr.java:890)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:221)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:190)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:120)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:111)
+	at org.apache.jena.riot.adapters.RDFReaderRIOT.read(RDFReaderRIOT.java:76)
+	at org.apache.jena.rdf.model.impl.ModelCom.read(ModelCom.java:263)
+	at org.apache.jena.ontology.impl.OntModelImpl.readDelegate(OntModelImpl.java:3090)
+	at org.apache.jena.ontology.impl.OntModelImpl.read(OntModelImpl.java:2182)
+	at org.apache.jena.ontology.impl.OntModelImpl.read(OntModelImpl.java:2106)
+	at openllet.examples.QuerySubsumptionExample.<init>(QuerySubsumptionExample.java:50)
+	at openllet.examples.QuerySubsumptionExample.main(QuerySubsumptionExample.java:44)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to owldl.com:80 [owldl.com/207.7.108.125] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.jena.riot.web.HttpOp.exec(HttpOp.java:1074)
+	... 18 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 28 more

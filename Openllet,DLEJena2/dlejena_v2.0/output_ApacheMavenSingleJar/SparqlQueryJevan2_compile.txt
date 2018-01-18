@@ -1,0 +1,65 @@
+examplesModifiedByJevan\SparqlQueryJevan2.java:4: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.Query;
+                            ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:5: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QueryExecution;
+                            ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:6: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+                            ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:7: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QueryFactory;
+                            ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:8: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.ResultSet;
+                            ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:9: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QuerySolution; /* Jevan 2017sep */
+                            ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:11: error: package dlejena does not exist
+import dlejena.DLEJenaParameters;
+              ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:12: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examplesModifiedByJevan\SparqlQueryJevan2.java:40: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:40: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:71: error: cannot find symbol
+        Query query = QueryFactory.create(queryString);
+        ^
+  symbol:   class Query
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:71: error: cannot find symbol
+        Query query = QueryFactory.create(queryString);
+                      ^
+  symbol:   variable QueryFactory
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:72: error: cannot find symbol
+        QueryExecution qexec = QueryExecutionFactory.create(query, abox);
+        ^
+  symbol:   class QueryExecution
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:72: error: cannot find symbol
+        QueryExecution qexec = QueryExecutionFactory.create(query, abox);
+                               ^
+  symbol:   variable QueryExecutionFactory
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:76: error: cannot find symbol
+        ResultSet results = qexec.execSelect();
+        ^
+  symbol:   class ResultSet
+  location: class SparqlQueryJevan2
+examplesModifiedByJevan\SparqlQueryJevan2.java:79: error: cannot find symbol
+            QuerySolution soln = results.nextSolution() ; /* Jevan 2017sep */
+            ^
+  symbol:   class QuerySolution
+  location: class SparqlQueryJevan2
+16 errors

@@ -1,0 +1,56 @@
+1. DLEJena v2.0 - for DLEJena.jar
+
+http://lpis.csd.auth.gr/systems/DLEJena/index.html
+http://lpis.csd.auth.gr/systems/DLEJena/distribution/dlejena_v2.0.rar
+
+2. DLEJena v2.0 - for content of data, examples folders in various locations
+of examples-src.rar
+
+http://lpis.csd.auth.gr/systems/DLEJena/examples.html
+http://lpis.csd.auth.gr/systems/DLEJena/distribution/examples-src.rar
+
+3. jena-2.6.2.zip for Jena-2.6.2\*.jar
+
+http://jena.apache.org/download/index.cgi
+http://archive.apache.org/dist/jena/binaries/
+
+http://web.archive.org/web/20100110233142/http://jena.sourceforge.net/
+http://web.archive.org/web/20091228062322/http://jena.sourceforge.net:80/downloads.html
+http://sourceforge.net/project/showfiles.php?group_id=40417&package_id=41716
+https://sourceforge.net/projects/jena/files/Archive/
+https://sourceforge.net/projects/jena/files/Archive/Jena/
+https://sourceforge.net/projects/jena/files/Archive/Jena/Jena-2.6.2/
+https://sourceforge.net/projects/jena/files/Archive/Jena/Jena-2.6.2/jena-2.6.2.zip/download
+
+3. owlapi-bin-07-06-09.zip for owlapi-bin-07-06-09\*.jar
+
+http://owlapi.sourceforge.net/
+https://github.com/owlcs/owlapi/wiki/Reasoners,-OWL-API-Support,-papers-about-the-OWL-API
+https://sourceforge.net/projects/owlapi/files/
+https://sourceforge.net/projects/owlapi/files/OWL%20API%20%28for%20OWL%202.0%29/2.0.0/
+https://sourceforge.net/projects/owlapi/files/OWL%20API%20%28for%20OWL%202.0%29/2.0.0/owlapi-bin-07-06-09.zip/download
+https://sourceforge.net/projects/owlapi/files/OWL%20API%20%28for%20OWL%202.0%29/2.0.0/owlapi-javadoc-all-07-06-09.zip/download
+
+4. owlapi-bin.jar
+
+https://github.com/severin-lemaignan/pellet
+severin-lemaignan pellet\pellet-2.3.0.zip\pellet-2.3.0\lib\owlapi\owlapi-bin.jar
+
+5. pellet-2.0.1.zip for pellet-2.0.1 jars
+
+https://mailman.stanford.edu/pipermail/protege-owl/2010-March.txt
+https://www.w3.org/2001/sw/wiki/ISWC_2010_Data_and_Demos
+https://mailman.stanford.edu/pipermail/protege-owl/2010-March/013618.html
+https://mailman.stanford.edu/pipermail/protege-owl/2010-March/013619.html
+http://protege-update.stanford.edu/protege4/plugins/4.0-plugins.repository
+http://protege-user.stanford.narkive.com/0J7asB7y/pellet-2-0-1-local-install
+https://protege.stanford.edu/support.php
+https://protegewiki.stanford.edu/wiki/ProtegeProject_FAQ
+http://pellet-users.mindswap.narkive.com/kzWXmO0U/pellet-2-0-1-maintenance-release
+(old url) http://clarkparsia.com/weblog/2010/01/11/pellet-2-0-1-maintenance-release/
+https://web.archive.org/web/*/http://clarkparsia.com/weblog/2010/01/11/pellet-2-0-1-maintenance-release/
+https://web.archive.org/web/20100114154331/http://clarkparsia.com:80/weblog/2010/01/11/pellet-2-0-1-maintenance-release/
+https://web.archive.org/web/20100201173228/http://clarkparsia.com:80/pellet
+https://web.archive.org/web/20100202192118/http://clarkparsia.com:80/pellet/download/
+https://web.archive.org/web/20110813164347if_/http://clarkparsia.com/pellet/downloads/pellet-2.0.1.zip
+

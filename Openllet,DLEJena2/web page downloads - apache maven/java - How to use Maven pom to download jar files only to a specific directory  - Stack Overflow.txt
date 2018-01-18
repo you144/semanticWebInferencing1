@@ -1,0 +1,18 @@
+https://stackoverflow.com/questions/7742252/how-to-use-maven-pom-to-download-jar-files-only-to-a-specific-directory
+
+Add something similar to the following to pom.xml:
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <configuration>
+        <outputDirectory>
+            ${project.build.directory}
+        </outputDirectory>
+    </configuration>
+</plugin>
+
+Then run mvn clean dependency:copy-dependencies to perform the copy. Combine this with the assembly plugin and you can package everything into a self contained archive for distribution.
+
+https://maven.apache.org/plugins/maven-assembly-plugin/
+

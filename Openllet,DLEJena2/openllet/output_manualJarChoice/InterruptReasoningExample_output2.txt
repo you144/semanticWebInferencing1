@@ -1,0 +1,6 @@
+log4j:WARN No appenders could be found for logger (Jena).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.NoSuchMethodError: openllet.core.utils.Timers.getTimer(Ljava/lang/String;)Lopenllet/core/utils/Timer;
+	at openllet.examples.InterruptReasoningExample.consistency(InterruptReasoningExample.java:169)
+	at openllet.examples.InterruptReasoningExample.main(InterruptReasoningExample.java:122)

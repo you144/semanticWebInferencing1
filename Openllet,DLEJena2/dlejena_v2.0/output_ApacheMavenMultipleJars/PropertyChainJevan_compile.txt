@@ -1,0 +1,17 @@
+examplesModifiedByJevan\PropertyChainJevan.java:7: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examplesModifiedByJevan\PropertyChainJevan.java:30: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class PropertyChainJevan
+examplesModifiedByJevan\PropertyChainJevan.java:30: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class PropertyChainJevan
+examplesModifiedByJevan\PropertyChainJevan.java:52: error: package dlejena.utils does not exist
+        dlejena.utils.Print.printRuleSet(dle.getABoxRules());
+                     ^
+4 errors

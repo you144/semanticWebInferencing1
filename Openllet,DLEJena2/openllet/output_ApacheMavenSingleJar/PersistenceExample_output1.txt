@@ -1,0 +1,2 @@
+Saving the state of the classifier to the file ... done.
+Reading the state of the classifier back from the file ... I/O Error occurred while reading the _current state of the incremental classifier: java.io.EOFException: Unexpected end of ZLIB input stream

@@ -1,0 +1,8 @@
+
+Classification time: 15010ms
+Subclasses of <http://www.co-ode.org/ontologies/galen#Pain>: <http://www.co-ode.org/ontologies/galen#Tenderness>,<http://www.co-ode.org/ontologies/galen#AbdominalPain>,<http://www.co-ode.org/ontologies/galen#ChestPain>,<http://www.co-ode.org/ontologies/galen#Dysuria>,<http://www.co-ode.org/ontologies/galen#LoinPain>
+
+
+Classification time: 580ms
+Subclasses of <http://www.co-ode.org/ontologies/galen#Pain>: <http://www.co-ode.org/ontologies/galen#Headache>,<http://www.co-ode.org/ontologies/galen#Tenderness>,<http://www.co-ode.org/ontologies/galen#AbdominalPain>,<http://www.co-ode.org/ontologies/galen#ChestPain>,<http://www.co-ode.org/ontologies/galen#Dysuria>,<http://www.co-ode.org/ontologies/galen#LoinPain>
+

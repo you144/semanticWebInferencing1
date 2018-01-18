@@ -1,0 +1,28 @@
+openllet\examples\IncrementalClassifierExample.java:71: error: cannot find symbol
+		System.out.println("Subclasses of " + pain + ": " + classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+		                                                                                        ^
+  symbol:   method entities()
+  location: interface NodeSet<OWLClass>
+openllet\examples\IncrementalClassifierExample.java:71: error: invalid method reference
+		System.out.println("Subclasses of " + pain + ": " + classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+		                                                                                                        ^
+  non-static method toString() cannot be referenced from a static context
+openllet\examples\IncrementalClassifierExample.java:87: error: cannot find symbol
+		System.out.println("Subclasses of " + pain + ": " + classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+		                                                                                        ^
+  symbol:   method entities()
+  location: interface NodeSet<OWLClass>
+openllet\examples\IncrementalClassifierExample.java:87: error: invalid method reference
+		System.out.println("Subclasses of " + pain + ": " + classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+		                                                                                                        ^
+  non-static method toString() cannot be referenced from a static context
+openllet\examples\IncrementalClassifierExample.java:99: error: cannot find symbol
+		System.out.println("Subclasses of " + pain + ": " + classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+		                                                                                        ^
+  symbol:   method entities()
+  location: interface NodeSet<OWLClass>
+openllet\examples\IncrementalClassifierExample.java:99: error: invalid method reference
+		System.out.println("Subclasses of " + pain + ": " + classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+		                                                                                                        ^
+  non-static method toString() cannot be referenced from a static context
+6 errors

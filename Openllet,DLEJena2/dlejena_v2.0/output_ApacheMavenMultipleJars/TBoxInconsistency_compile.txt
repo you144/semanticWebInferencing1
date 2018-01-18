@@ -1,0 +1,14 @@
+examples\TBoxInconsistency.java:3: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\TBoxInconsistency.java:28: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class TBoxInconsistency
+examples\TBoxInconsistency.java:28: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class TBoxInconsistency
+3 errors

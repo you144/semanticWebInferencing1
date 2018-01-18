@@ -1,0 +1,13 @@
+
+Instances of :hasChild :
+Bill :hasChild Bob
+Cathy :hasChild Fred
+Valerie :hasChild Tim
+Simon :hasChild Tim
+Fred :hasChild Jacob
+Bill :hasChild Cathy
+Michael :hasChild Simon
+John :hasChild Michael
+John :hasChild Mary
+James2 :hasChild John
+Fred :hasChild James

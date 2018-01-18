@@ -1,0 +1,17 @@
+examplesModifiedByJevan\SparqlQueryJevan1.java:11: error: package dlejena does not exist
+import dlejena.DLEJenaParameters;
+              ^
+examplesModifiedByJevan\SparqlQueryJevan1.java:12: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examplesModifiedByJevan\SparqlQueryJevan1.java:40: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class SparqlQueryJevan1
+examplesModifiedByJevan\SparqlQueryJevan1.java:40: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class SparqlQueryJevan1
+4 errors

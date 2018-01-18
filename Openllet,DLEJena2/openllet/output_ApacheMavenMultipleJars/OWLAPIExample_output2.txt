@@ -1,0 +1,537 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing http://www.mindswap.org/2004/owl/mindswappers#
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser@62dae540
+2) org.semanticweb.owlapi.owlxml.parser.OWLXMLParser@757d6814
+3) org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser@475835b1
+4) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioTurtleDocumentFormatFactory@95fd655c
+5) org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParser@790174f2
+6) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NQuadsDocumentFormatFactory@6f9c39ad
+7) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonDocumentFormatFactory@cd748dc3
+8) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NTriplesDocumentFormatFactory@937ecd36
+9) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.TrigDocumentFormatFactory@27e81c
+10) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormatFactory@dcacc47d
+11) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.N3DocumentFormatFactory@9a5
+12) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioRDFXMLDocumentFormatFactory@69b9a3bc
+13) org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@30cdae70
+14) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.TrixDocumentFormatFactory@27e82d
+15) org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser@e36bb2a
+16) org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxOWLParser@7d0332e1
+17) org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser@78b236a0
+18) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.BinaryRDFDocumentFormatFactory@3bf24493
+19) org.coode.owlapi.obo12.parser.OWLOBO12Parser@29d37757
+20) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFaDocumentFormatFactory@264e8d
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser@62dae540
+    Stack trace:
+org.semanticweb.owlapi.rdf.rdfxml.parser.RDFParserException: [line=4:column=44] Expecting rdf:RDF element.        org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser.parse(RDFXMLParser.java:63)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+[line=4:column=44] Expecting rdf:RDF element.        org.semanticweb.owlapi.rdf.rdfxml.parser.RDFParser.verify(RDFParser.java:456)
+        org.semanticweb.owlapi.rdf.rdfxml.parser.StartRDF.startElement(StartRDF.java:203)
+        org.semanticweb.owlapi.rdf.rdfxml.parser.RDFParser.startElement(RDFParser.java:216)
+        org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+        org.apache.xerces.impl.dtd.XMLDTDValidator.startElement(Unknown Source)
+        org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+        org.apache.xerces.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(Unknown Source)
+        org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+        org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+        org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.owlxml.parser.OWLXMLParser@757d6814
+    Stack trace:
+org.xml.sax.SAXParseException; systemId: http://www.mindswap.org/2004/owl/mindswappers#; lineNumber: 12; columnNumber: 3; The element type "link" must be terminated by the matching end-tag "</link>".        org.semanticweb.owlapi.owlxml.parser.OWLXMLParser.parse(OWLXMLParser.java:61)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+The element type "link" must be terminated by the matching end-tag "</link>".        org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+        org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+        org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+        org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+        org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+        org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+        org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+        org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+        org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+        org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser@475835b1
+    Stack trace:
+Encountered unexpected token: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\r\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">" <FULLIRI>
+    at line 2, column 2.
+
+Was expecting one of:
+
+    "Ontology"
+    "Prefix"
+ (Line 0)        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser.parse(OWLFunctionalSyntaxOWLParser.java:49)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Encountered unexpected token: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\r\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">" <FULLIRI>
+    at line 2, column 2.
+
+Was expecting one of:
+
+    "Ontology"
+    "Prefix"
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.generateParseException(OWLFunctionalSyntaxParser.java:2666)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.jj_consume_token(OWLFunctionalSyntaxParser.java:2585)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.Ontology(OWLFunctionalSyntaxParser.java:178)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.parse(OWLFunctionalSyntaxParser.java:162)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser.parse(OWLFunctionalSyntaxOWLParser.java:47)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioTurtleDocumentFormatFactory@95fd655c
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space: '32' [line 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+IRI included an unencoded space: '32' [line 2]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:322)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:596)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.reportError(TurtleParser.java:1297)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseURI(TurtleParser.java:892)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseValue(TurtleParser.java:580)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseSubject(TurtleParser.java:430)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:371)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:240)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parse(TurtleParser.java:202)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParser@790174f2
+    Stack trace:
+Encountered '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"' at line 2 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 2)        org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParser.parse(ManchesterOWLSyntaxOntologyParser.java:81)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NQuadsDocumentFormatFactory@6f9c39ad
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space:   [line 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+IRI included an unencoded space:   [line 2]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:322)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:596)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.reportError(NTriplesParser.java:635)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseUriRef(NTriplesParser.java:424)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseSubject(NTriplesParser.java:337)
+        org.eclipse.rdf4j.rio.nquads.NQuadsParser.parseQuad(NQuadsParser.java:118)
+        org.eclipse.rdf4j.rio.nquads.NQuadsParser.parse(NQuadsParser.java:97)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonDocumentFormatFactory@cd748dc3
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: Found IOException during parsing [line 2, column 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Found IOException during parsing [line 2, column 2]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:403)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportFatalError(AbstractRDFParser.java:677)
+        org.eclipse.rdf4j.rio.rdfjson.RDFJSONParser.reportFatalError(RDFJSONParser.java:146)
+        org.eclipse.rdf4j.rio.rdfjson.RDFJSONParser.parse(RDFJSONParser.java:173)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NTriplesDocumentFormatFactory@937ecd36
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space:   [line 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+IRI included an unencoded space:   [line 2]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:322)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:596)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.reportError(NTriplesParser.java:635)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseUriRef(NTriplesParser.java:424)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseSubject(NTriplesParser.java:337)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parseTriple(NTriplesParser.java:281)
+        org.eclipse.rdf4j.rio.ntriples.NTriplesParser.parse(NTriplesParser.java:176)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.TrigDocumentFormatFactory@27e81c
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space: '32' [line 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+IRI included an unencoded space: '32' [line 2]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:322)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:596)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.reportError(TurtleParser.java:1297)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseURI(TurtleParser.java:892)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseValue(TurtleParser.java:580)
+        org.eclipse.rdf4j.rio.trig.TriGParser.parseGraph(TriGParser.java:149)
+        org.eclipse.rdf4j.rio.trig.TriGParser.parseStatement(TriGParser.java:119)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parse(TurtleParser.java:202)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormatFactory@dcacc47d
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: Could not parse JSONLD        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Could not parse JSONLD        org.eclipse.rdf4j.rio.jsonld.JSONLDParser.parse(JSONLDParser.java:110)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (BufferedReader); line: 2, column: 2]        com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1798)
+        com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:663)
+        com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:561)
+        com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1892)
+        com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:747)
+        com.github.jsonldjava.utils.JsonUtils.fromJsonParser(JsonUtils.java:140)
+        com.github.jsonldjava.utils.JsonUtils.fromReader(JsonUtils.java:122)
+        org.eclipse.rdf4j.rio.jsonld.JSONLDParser.parse(JSONLDParser.java:104)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.N3DocumentFormatFactory@9a5
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: IRI included an unencoded space: '32' [line 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+IRI included an unencoded space: '32' [line 2]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:322)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:596)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.reportError(TurtleParser.java:1297)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseURI(TurtleParser.java:892)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseValue(TurtleParser.java:580)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseSubject(TurtleParser.java:430)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:371)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:240)
+        org.eclipse.rdf4j.rio.turtle.TurtleParser.parse(TurtleParser.java:202)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:171)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioRDFXMLDocumentFormatFactory@69b9a3bc
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: unqualified attribute 'http-equiv' not allowed [line 6, column 73]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+unqualified attribute 'http-equiv' not allowed [line 6, column 73]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:322)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportError(AbstractRDFParser.java:596)
+        org.eclipse.rdf4j.rio.rdfxml.RDFXMLParser.reportError(RDFXMLParser.java:1232)
+        org.eclipse.rdf4j.rio.rdfxml.SAXFilter.checkAndCopyAttributes(SAXFilter.java:528)
+        org.eclipse.rdf4j.rio.rdfxml.SAXFilter.startElement(SAXFilter.java:294)
+        org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+        org.apache.xerces.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+        org.apache.xerces.impl.dtd.XMLDTDValidator.emptyElement(Unknown Source)
+        org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+        org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@30cdae70
+    Stack trace:
+org.semanticweb.owlapi.rdf.turtle.parser.ParseException: Encountered unexpected token: "<" <ERROR>
+    at line 2, column 1.
+
+Was expecting one of:
+
+    "("
+    "@base"
+    "@prefix"
+    "["
+    <EMPTY_BLANK_NODE>
+    <FULLIRI>
+    <NODEID>
+    <PNAME_LN>
+    <PNAME_NS>
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:58)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Encountered unexpected token: "<" <ERROR>
+    at line 2, column 1.
+
+Was expecting one of:
+
+    "("
+    "@base"
+    "@prefix"
+    "["
+    <EMPTY_BLANK_NODE>
+    <FULLIRI>
+    <NODEID>
+    <PNAME_LN>
+    <PNAME_NS>
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.generateParseException(TurtleParser.java:1034)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.jj_consume_token(TurtleParser.java:902)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:165)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:54)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.TrixDocumentFormatFactory@27e82d
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: The element type "link" must be terminated by the matching end-tag "</link>". [line 12, column 3]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+The element type "link" must be terminated by the matching end-tag "</link>". [line 12, column 3]        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:403)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportFatalError(AbstractRDFParser.java:677)
+        org.eclipse.rdf4j.rio.trix.TriXParser.reportFatalError(TriXParser.java:280)
+        org.eclipse.rdf4j.rio.trix.TriXParser.fatalError(TriXParser.java:481)
+        org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+        org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+        org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+        org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+        org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+        org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser@e36bb2a
+    Stack trace:
+LINENO: 2 - Could not find tag separator ':' in line.
+LINE: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"        org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser.parse(OBOFormatOWLAPIParser.java:50)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+LINENO: 2 - Could not find tag separator ':' in line.
+LINE: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"        org.obolibrary.oboformat.parser.OBOFormatParser.error(OBOFormatParser.java:1310)
+        org.obolibrary.oboformat.parser.OBOFormatParser.getParseTag(OBOFormatParser.java:733)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseHeaderClause(OBOFormatParser.java:382)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseHeaderClauseNl(OBOFormatParser.java:375)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseHeaderFrame(OBOFormatParser.java:358)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseOBODoc(OBOFormatParser.java:239)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parse(OBOFormatParser.java:211)
+        org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser.parse(OBOFormatOWLAPIParser.java:44)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxOWLParser@7d0332e1
+    Stack trace:
+Encountered unexpected token: "<" <MAX>
+    at line 2, column 1.
+
+Was expecting:
+
+    ":"
+        org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxOWLParser.parse(DLSyntaxOWLParser.java:52)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Encountered unexpected token: "<" <MAX>
+    at line 2, column 1.
+
+Was expecting:
+
+    ":"
+        org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxParser.generateParseException(DLSyntaxParser.java:1572)
+        org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxParser.jj_consume_token(DLSyntaxParser.java:1443)
+        org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxParser.parseAxiom(DLSyntaxParser.java:141)
+        org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxParser.parseAxioms(DLSyntaxParser.java:114)
+        org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxOWLParser.parse(DLSyntaxOWLParser.java:48)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser@78b236a0
+    Stack trace:
+org.semanticweb.owlapi.krss2.parser.ParseException: Encountered unexpected token: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\r\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">" ">"
+    at line 2, column 1.
+
+Was expecting:
+
+    <EOF>
+        org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser.parse(KRSS2OWLParser.java:248)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Encountered unexpected token: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\r\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">" ">"
+    at line 2, column 1.
+
+Was expecting:
+
+    <EOF>
+        org.semanticweb.owlapi.krss2.parser.KRSS2Parser.generateParseException(KRSS2Parser.java:2103)
+        org.semanticweb.owlapi.krss2.parser.KRSS2Parser.jj_consume_token(KRSS2Parser.java:1968)
+        org.semanticweb.owlapi.krss2.parser.KRSS2Parser.parse(KRSS2Parser.java:124)
+        org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser.parse(KRSS2OWLParser.java:245)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.BinaryRDFDocumentFormatFactory@3bf24493
+    Stack trace:
+org.eclipse.rdf4j.rio.RDFParseException: File does not contain a binary RDF document        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+File does not contain a binary RDF document        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:403)
+        org.eclipse.rdf4j.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:388)
+        org.eclipse.rdf4j.rio.helpers.AbstractRDFParser.reportFatalError(AbstractRDFParser.java:667)
+        org.eclipse.rdf4j.rio.binary.BinaryRDFParser.parse(BinaryRDFParser.java:80)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:181)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+
+
+--------------------------------------------------------------------------------
+Parser: org.coode.owlapi.obo12.parser.OWLOBO12Parser@29d37757
+    Stack trace:
+Lexical error at line 2, column 63.  Encountered: "\r" (13), after : ""        org.coode.owlapi.obo12.parser.OBOParserTokenManager.getNextToken(OBOParserTokenManager.java:897)
+        org.coode.owlapi.obo12.parser.OBOParser.jj_ntk_f(OBOParser.java:253)
+        org.coode.owlapi.obo12.parser.OBOParser.TagValuePair(OBOParser.java:84)
+        org.coode.owlapi.obo12.parser.OBOParser.Header(OBOParser.java:49)
+        org.coode.owlapi.obo12.parser.OBOParser.parse(OBOParser.java:19)
+        org.coode.owlapi.obo12.parser.OWLOBO12Parser.parse(OWLOBO12Parser.java:109)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFaDocumentFormatFactory@264e8d
+    Stack trace:
+org.eclipse.rdf4j.rio.UnsupportedRDFormatException: Did not recognise RDF format object RDFa (mimeTypes=application/xhtml+xml, application/html, text/html; ext=xhtml, html)        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:138)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+        openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)
+Did not recognise RDF format object RDFa (mimeTypes=application/xhtml+xml, application/html, text/html; ext=xhtml, html)        org.eclipse.rdf4j.rio.Rio.lambda$unsupportedFormat$0(Rio.java:568)
+        java.util.Optional.orElseThrow(Optional.java:290)
+        org.eclipse.rdf4j.rio.Rio.createParser(Rio.java:100)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:164)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:125)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:192)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+
+
+
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:233)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:1071)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1033)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:933)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:891)
+	at openllet.examples.OWLAPIExample.main(OWLAPIExample.java:41)

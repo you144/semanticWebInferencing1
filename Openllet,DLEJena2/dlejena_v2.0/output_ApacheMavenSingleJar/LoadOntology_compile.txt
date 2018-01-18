@@ -1,0 +1,25 @@
+examples\LoadOntology.java:12: error: package dlejena does not exist
+import dlejena.DLEJenaParameters;
+              ^
+examples\LoadOntology.java:13: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\LoadOntology.java:32: error: cannot find symbol
+        DLEJenaParameters.SHOW_MESSAGES_IN_STANDARD_OUTPUT = true;
+        ^
+  symbol:   variable DLEJenaParameters
+  location: class LoadOntology
+examples\LoadOntology.java:50: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class LoadOntology
+examples\LoadOntology.java:50: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class LoadOntology
+examples\LoadOntology.java:92: error: package dlejena.utils does not exist
+        dlejena.utils.Print.printRuleSet(aboxRules);
+                     ^
+6 errors

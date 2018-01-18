@@ -1,0 +1,56 @@
+openllet\examples263\SPARQLDLExample263.java:20: error: package org.eclipse.jetty.server does not exist
+import org.eclipse.jetty.server.Handler;
+                               ^
+openllet\examples263\SPARQLDLExample263.java:21: error: package org.eclipse.jetty.server does not exist
+import org.eclipse.jetty.server.Server;
+                               ^
+openllet\examples263\SPARQLDLExample263.java:22: error: package org.eclipse.jetty.server.handler does not exist
+import org.eclipse.jetty.server.handler.DefaultHandler;
+                                       ^
+openllet\examples263\SPARQLDLExample263.java:23: error: package org.eclipse.jetty.server.handler does not exist
+import org.eclipse.jetty.server.handler.HandlerList;
+                                       ^
+openllet\examples263\SPARQLDLExample263.java:24: error: package org.eclipse.jetty.server.handler does not exist
+import org.eclipse.jetty.server.handler.ResourceHandler;
+                                       ^
+openllet\examples263\SPARQLDLExample263.java:108: error: cannot find symbol
+		Server _server;
+		^
+  symbol:   class Server
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:112: error: cannot find symbol
+			_server = new Server(8484);
+			              ^
+  symbol:   class Server
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:113: error: cannot find symbol
+			final ResourceHandler resource_handler = new ResourceHandler();
+			      ^
+  symbol:   class ResourceHandler
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:113: error: cannot find symbol
+			final ResourceHandler resource_handler = new ResourceHandler();
+			                                             ^
+  symbol:   class ResourceHandler
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:117: error: cannot find symbol
+			final HandlerList handlers = new HandlerList();
+			      ^
+  symbol:   class HandlerList
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:117: error: cannot find symbol
+			final HandlerList handlers = new HandlerList();
+			                                 ^
+  symbol:   class HandlerList
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:118: error: cannot find symbol
+			handlers.setHandlers(new Handler[] { resource_handler, new DefaultHandler() });
+			                         ^
+  symbol:   class Handler
+  location: class SPARQLDLExample263.FileServer
+openllet\examples263\SPARQLDLExample263.java:118: error: cannot find symbol
+			handlers.setHandlers(new Handler[] { resource_handler, new DefaultHandler() });
+			                                                           ^
+  symbol:   class DefaultHandler
+  location: class SPARQLDLExample263.FileServer
+13 errors

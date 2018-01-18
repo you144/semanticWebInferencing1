@@ -1,0 +1,8 @@
+Defining the ontology...
+ - Class created: Publication
+ - Class created: Document
+ - Subclass relationship: Publication is subclass of Document
+ - Individual of Publication created: myThesis
+done!
+
+Initializing DLEJena...

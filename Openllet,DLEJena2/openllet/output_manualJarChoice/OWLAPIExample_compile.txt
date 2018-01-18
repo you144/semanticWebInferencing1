@@ -1,0 +1,5 @@
+openllet\examples\OWLAPIExample.java:40: error: cannot access Provider
+		final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		                                             ^
+  class file for com.google.inject.Provider not found
+1 error

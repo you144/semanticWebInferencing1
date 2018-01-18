@@ -1,0 +1,26 @@
+openllet\examples\InterruptReasoningExample.java:169: error: cannot find symbol
+		System.out.println("finished in " + timers.getTimer("isConsistent").getLast());
+		                                                                   ^
+  symbol:   method getLast()
+  location: class Optional<Timer>
+openllet\examples\InterruptReasoningExample.java:182: error: cannot find symbol
+			System.out.println("finished in " + timers.getTimer("classify").getLast() + "ms");
+			                                                               ^
+  symbol:   method getLast()
+  location: class Optional<Timer>
+openllet\examples\InterruptReasoningExample.java:187: error: cannot find symbol
+			System.out.println("interrupted after " + timers.getTimer("classify").getElapsed() + "ms");
+			                                                                     ^
+  symbol:   method getElapsed()
+  location: class Optional<Timer>
+openllet\examples\InterruptReasoningExample.java:206: error: cannot find symbol
+			System.out.println("finished in " + timers.getTimer("realize").getLast() + "ms");
+			                                                              ^
+  symbol:   method getLast()
+  location: class Optional<Timer>
+openllet\examples\InterruptReasoningExample.java:211: error: cannot find symbol
+			System.out.println("interrupted after " + timers.getTimer("realize").getElapsed() + "ms");
+			                                                                    ^
+  symbol:   method getElapsed()
+  location: class Optional<Timer>
+5 errors

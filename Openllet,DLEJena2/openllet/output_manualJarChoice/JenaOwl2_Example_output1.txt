@@ -1,0 +1,17 @@
+iter or ppi
+http://bdo/x
+iter or ppi
+http://www.w3.org/2002/07/owl#priorVersion
+http://www.w3.org/2002/07/owl#bottomObjectProperty
+http://www.w3.org/2002/07/owl#incompatibleWith
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2002/07/owl#backwardCompatibleWith
+http://bdo/x
+http://www.w3.org/2000/01/rdf-schema#seeAlso
+http://www.w3.org/2002/07/owl#versionInfo
+http://www.w3.org/2002/07/owl#topObjectProperty
+http://www.w3.org/2002/07/owl#topDataProperty
+http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+http://www.w3.org/2002/07/owl#bottomDataProperty
+iter or ppi

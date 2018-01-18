@@ -1,0 +1,32 @@
+http://maven.apache.org/plugins/maven-dependency-plugin/examples/copying-project-dependencies.html
+
+Project dependencies are the dependencies declared in your pom. To copy them with their transitive dependencies, use the dependency:copy-dependencies mojo and configure the plugin like the sample below:
+
+    <project>
+      [...]
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.0.2</version>
+            <executions>
+              <execution>
+                <id>copy-dependencies</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>copy-dependencies</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
+                  <overWriteReleases>false</overWriteReleases>
+                  <overWriteSnapshots>false</overWriteSnapshots>
+                  <overWriteIfNewer>true</overWriteIfNewer>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      [...]
+    </project>

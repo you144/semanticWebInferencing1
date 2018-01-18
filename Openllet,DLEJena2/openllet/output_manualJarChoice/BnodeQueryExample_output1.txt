@@ -1,0 +1,22 @@
+Running first query with PelletQueryEngine...
+------------------------------
+| Meal          | WineColor  |
+==============================
+| food:MyLunch  | food:White |
+| food:MyDinner | wine:Red   |
+| food:MyDinner | food:Red   |
+| food:MyLunch  | wine:White |
+------------------------------
+
+Running second query with PelletQueryEngine...
+--------------------
+| Meal | WineColor |
+====================
+--------------------
+
+Running first query with standard Jena QueryEngine...
+--------------------
+| Meal | WineColor |
+====================
+--------------------
+

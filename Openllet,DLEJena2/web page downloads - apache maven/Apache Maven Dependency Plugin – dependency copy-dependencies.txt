@@ -1,0 +1,1 @@
+http://maven.apache.org/plugins/maven-dependency-plugin/copy-dependencies-mojo.html

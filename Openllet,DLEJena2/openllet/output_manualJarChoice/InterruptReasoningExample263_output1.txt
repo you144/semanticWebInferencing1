@@ -1,0 +1,7 @@
+Parsing the ontology...finished
+
+Consistency Timeout: 5000ms
+Checking consistency...finished in 712
+
+Classify Timeout: 50000ms
+Classifying...

@@ -1,0 +1,12 @@
+Classifiying 3 elements
+Classifiying:  100% complete in 00:00
+Classifiying finished in 00:00
+Realizing 4 elements
+Realizing:  100% complete in 00:00
+Realizing finished in 00:00
+Classifiying 5 elements
+Classifiying:  80% complete in 00:00Classifiying:  100% complete in 00:00
+Classifiying finished in 00:00
+Realizing 6 elements
+Realizing:  100% complete in 00:00
+Realizing finished in 00:00

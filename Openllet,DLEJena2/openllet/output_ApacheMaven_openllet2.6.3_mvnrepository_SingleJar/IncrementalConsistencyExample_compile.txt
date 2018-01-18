@@ -1,0 +1,16 @@
+openllet\examples\IncrementalConsistencyExample.java:214: error: cannot find symbol
+		JenaReasoner.printIterator(model.validate().getReports(), "Validation Results");
+		^
+  symbol:   variable JenaReasoner
+  location: class IncrementalConsistencyExample
+openllet\examples\IncrementalConsistencyExample.java:227: error: cannot find symbol
+		JenaReasoner.printIterator(model.validate().getReports(), "Validation Results");
+		^
+  symbol:   variable JenaReasoner
+  location: class IncrementalConsistencyExample
+openllet\examples\IncrementalConsistencyExample.java:242: error: cannot find symbol
+		JenaReasoner.printIterator(model.validate().getReports(), "Validation Results");
+		^
+  symbol:   variable JenaReasoner
+  location: class IncrementalConsistencyExample
+3 errors

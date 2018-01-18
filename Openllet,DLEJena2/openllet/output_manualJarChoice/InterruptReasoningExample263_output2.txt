@@ -1,0 +1,20 @@
+log4j:WARN No appenders could be found for logger (Jena).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/jgrapht/DirectedGraph
+	at openllet.core.taxonomy.DefinitionOrderFactory.createDefinitionOrder(DefinitionOrderFactory.java:29)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.createDefinitionOrder(CDOptimizedTaxonomyBuilder.java:363)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.prepare(CDOptimizedTaxonomyBuilder.java:284)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.lambda$classify$0(CDOptimizedTaxonomyBuilder.java:175)
+	at openllet.core.utils.Timers.execute(Timers.java:118)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:175)
+	at openllet.core.KnowledgeBaseImpl.classify(KnowledgeBaseImpl.java:2295)
+	at openllet.jena.PelletInfGraph.classify(PelletInfGraph.java:287)
+	at openllet.examples263.InterruptReasoningExample263.classify(InterruptReasoningExample263.java:181)
+	at openllet.examples263.InterruptReasoningExample263.main(InterruptReasoningExample263.java:124)
+Caused by: java.lang.ClassNotFoundException: org.jgrapht.DirectedGraph
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 10 more

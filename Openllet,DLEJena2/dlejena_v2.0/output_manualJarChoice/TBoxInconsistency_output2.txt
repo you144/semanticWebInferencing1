@@ -1,0 +1,10 @@
+Classifiying 4 elements
+Classifiying:  75% complete in 00:00Classifiying:  100% complete in 00:00
+Classifiying finished in 00:00
+Realizing 4 elements
+Realizing:  100% complete in 00:00
+Realizing finished in 00:00
+Exception in thread "main" dlejena.exceptions.InconsistentTBoxException: Pellet has determined an unsatisfiable concept: http://dlejena/examples/tboxInconsistency.owl#Man
+	at dlejena.DLEJenaReasoner.tboxReasoning(DLEJenaReasoner.java:403)
+	at dlejena.DLEJenaReasoner.initialize(DLEJenaReasoner.java:187)
+	at examples.TBoxInconsistency.main(TBoxInconsistency.java:42)

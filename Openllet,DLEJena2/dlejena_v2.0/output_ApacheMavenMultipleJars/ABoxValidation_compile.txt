@@ -1,0 +1,14 @@
+examples\ABoxValidation.java:3: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\ABoxValidation.java:27: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class ABoxValidation
+examples\ABoxValidation.java:27: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class ABoxValidation
+3 errors

@@ -1,0 +1,23 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Openllet :: Examples 2.6.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for com.github.galigator.openllet:openllet-jena:jar:2.6.4-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for com.github.galigator.openllet:openllet-owlapi:jar:2.6.4-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for com.github.galigator.openllet:openllet-modularity:jar:2.6.4-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for com.github.galigator.openllet:openllet-explanation:jar:2.6.4-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.994 s
+[INFO] Finished at: 2018-01-18T14:55:35+11:00
+[INFO] Final Memory: 5M/16M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project openllet-examples: Could not resolve dependencies for project com.github.galigator.openllet:openllet-examples:jar:2.6.4-SNAPSHOT: The following artifacts could not be resolved: com.github.galigator.openllet:openllet-jena:jar:2.6.4-SNAPSHOT, com.github.galigator.openllet:openllet-owlapi:jar:2.6.4-SNAPSHOT, com.github.galigator.openllet:openllet-modularity:jar:2.6.4-SNAPSHOT, com.github.galigator.openllet:openllet-explanation:jar:2.6.4-SNAPSHOT: Could not find artifact com.github.galigator.openllet:openllet-jena:jar:2.6.4-SNAPSHOT -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

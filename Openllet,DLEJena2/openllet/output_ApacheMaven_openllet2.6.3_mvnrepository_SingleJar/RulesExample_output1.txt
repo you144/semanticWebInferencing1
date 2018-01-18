@@ -1,0 +1,6 @@
+Cain has sibling(s): Abel
+Abel has sibling(s): Cain
+Remus has sibling(s): none
+Romulus has sibling(s): none
+BadChild instances: Cain
+Child instances: Cain, Oedipus

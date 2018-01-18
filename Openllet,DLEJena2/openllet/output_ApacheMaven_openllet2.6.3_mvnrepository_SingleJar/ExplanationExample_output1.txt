@@ -1,0 +1,20 @@
+Why is <http://cohse.semanticweb.org/ontologies/people#mad+cow> concept unsatisfiable?
+Explanation(s): 
+1)   vegetarian equivalentTo animal
+                             and eats only not animal
+                             and eats only not part_of some animal
+     cow subClassOf vegetarian
+     cow equivalentTo cow
+                      and eats some brain
+                                    and part_of some sheep
+     sheep subClassOf animal
+
+
+Why is <http://cohse.semanticweb.org/ontologies/people#animal+lover> subclass of <http://cohse.semanticweb.org/ontologies/people#pet+owner>?
+2)   owner equivalentTo person
+                        and has_pet some animal
+     lover equivalentTo person
+                        and has_pet min 3
+     has_pet range animal
+
+

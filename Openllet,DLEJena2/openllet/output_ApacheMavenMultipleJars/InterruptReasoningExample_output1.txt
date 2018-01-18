@@ -1,0 +1,29 @@
+Parsing the ontology...finished
+
+Consistency Timeout: 5000ms
+Checking consistency...finished in 2390
+
+Classify Timeout: 50000ms
+Classifying...finished in 3158ms
+Classified: true
+
+Realize Timeout: 1000ms
+Realizing...interrupted after 1079ms
+Realized: false
+
+Query Timeout: 0ms
+Retrieving instances of AmericanWine...completed in 314ms (24 results)
+Running SPARQL query...completed in 283ms (23 results)
+
+Query Timeout: 200ms
+Retrieving instances of AmericanWine...interrupted after 202ms
+Running SPARQL query...interrupted after 202ms
+
+Query Timeout: 2000ms
+Retrieving instances of AmericanWine...completed in 162ms (24 results)
+Running SPARQL query...completed in 280ms (23 results)
+
+Query Timeout: 20000ms
+Retrieving instances of AmericanWine...completed in 228ms (24 results)
+Running SPARQL query...completed in 293ms (23 results)
+

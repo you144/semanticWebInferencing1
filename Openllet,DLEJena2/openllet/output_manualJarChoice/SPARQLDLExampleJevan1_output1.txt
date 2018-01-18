@@ -1,0 +1,44 @@
+PREFIX  :     <http://example.org/relatives#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT  *
+WHERE
+  { ?s  :hasChild  ?o }
+
+-----------------------------------------------------------------------------------
+| s                                      | o                                      |
+===================================================================================
+| <http://example.org/relatives#John>    | <http://example.org/relatives#Michael> |
+| <http://example.org/relatives#John>    | <http://example.org/relatives#Mary>    |
+| <http://example.org/relatives#Simon>   | <http://example.org/relatives#Tim>     |
+| <http://example.org/relatives#Bill>    | <http://example.org/relatives#Bob>     |
+| <http://example.org/relatives#Bill>    | <http://example.org/relatives#Cathy>   |
+| <http://example.org/relatives#Cathy>   | <http://example.org/relatives#Fred>    |
+| <http://example.org/relatives#Michael> | <http://example.org/relatives#Simon>   |
+| <http://example.org/relatives#James2>  | <http://example.org/relatives#John>    |
+| <http://example.org/relatives#Fred>    | <http://example.org/relatives#James>   |
+| <http://example.org/relatives#Fred>    | <http://example.org/relatives#Jacob>   |
+| <http://example.org/relatives#Valerie> | <http://example.org/relatives#Tim>     |
+-----------------------------------------------------------------------------------
+
+PREFIX  :     <http://example.org/relatives#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT  ?gp
+WHERE
+  { ?gc  :hasGrandparent  ?gp ;
+         rdf:type         :Person
+  }
+
+------------------------------------------
+| gp                                     |
+==========================================
+| <http://example.org/relatives#Cathy>   |
+| <http://example.org/relatives#Cathy>   |
+| <http://example.org/relatives#Michael> |
+| <http://example.org/relatives#John>    |
+| <http://example.org/relatives#James2>  |
+| <http://example.org/relatives#Bill>    |
+| <http://example.org/relatives#James2>  |
+------------------------------------------
+

@@ -1,0 +1,57 @@
+examples\SparqlQuery.java:4: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.Query;
+                            ^
+examples\SparqlQuery.java:5: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QueryExecution;
+                            ^
+examples\SparqlQuery.java:6: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+                            ^
+examples\SparqlQuery.java:7: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.QueryFactory;
+                            ^
+examples\SparqlQuery.java:8: error: package com.hp.hpl.jena.query does not exist
+import com.hp.hpl.jena.query.ResultSet;
+                            ^
+examples\SparqlQuery.java:10: error: package dlejena does not exist
+import dlejena.DLEJenaParameters;
+              ^
+examples\SparqlQuery.java:11: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\SparqlQuery.java:39: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class SparqlQuery
+examples\SparqlQuery.java:39: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class SparqlQuery
+examples\SparqlQuery.java:71: error: cannot find symbol
+        Query query = QueryFactory.create(queryString);
+        ^
+  symbol:   class Query
+  location: class SparqlQuery
+examples\SparqlQuery.java:71: error: cannot find symbol
+        Query query = QueryFactory.create(queryString);
+                      ^
+  symbol:   variable QueryFactory
+  location: class SparqlQuery
+examples\SparqlQuery.java:72: error: cannot find symbol
+        QueryExecution qexec = QueryExecutionFactory.create(query, abox);
+        ^
+  symbol:   class QueryExecution
+  location: class SparqlQuery
+examples\SparqlQuery.java:72: error: cannot find symbol
+        QueryExecution qexec = QueryExecutionFactory.create(query, abox);
+                               ^
+  symbol:   variable QueryExecutionFactory
+  location: class SparqlQuery
+examples\SparqlQuery.java:76: error: cannot find symbol
+        ResultSet results = qexec.execSelect();
+        ^
+  symbol:   class ResultSet
+  location: class SparqlQuery
+14 errors

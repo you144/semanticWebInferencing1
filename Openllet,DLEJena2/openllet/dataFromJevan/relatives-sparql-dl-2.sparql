@@ -1,0 +1,13 @@
+# Query2
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://example.org/relatives#>
+
+SELECT ?gp
+WHERE
+{
+?gc :hasGrandparent ?gp .
+?gc a :Person .
+}
+
+        

@@ -1,0 +1,17 @@
+examples\CreateOntology.java:17: error: package dlejena does not exist
+import dlejena.DLEJenaParameters;
+              ^
+examples\CreateOntology.java:18: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\CreateOntology.java:71: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class CreateOntology
+examples\CreateOntology.java:71: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class CreateOntology
+4 errors

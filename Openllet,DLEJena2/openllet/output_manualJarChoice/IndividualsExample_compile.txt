@@ -1,0 +1,10 @@
+openllet\examples\IndividualsExample.java:97: error: cannot access Provider
+		final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		                                             ^
+  class file for com.google.inject.Provider not found
+openllet\examples\IndividualsExample.java:112: error: cannot find symbol
+		for (final OWLNamedIndividual ind : reasoner.getInstances(Person, false).entities().toArray(OWLNamedIndividual[]::new))
+		                                                                        ^
+  symbol:   method entities()
+  location: interface NodeSet<OWLNamedIndividual>
+2 errors

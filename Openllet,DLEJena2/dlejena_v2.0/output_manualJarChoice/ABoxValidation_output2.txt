@@ -1,0 +1,12 @@
+Classifiying 2 elements
+Classifiying:  100% complete in 00:00
+Classifiying finished in 00:00
+Realizing 3 elements
+Realizing:  100% complete in 00:00
+Realizing finished in 00:00
+Exception in thread "main" dlejena.exceptions.ABoxValidationException: "Two individuals both same and different, may be due to disjoint classes or functional properties"
+Culprit = http://dlejena/examples/aboxvalidation.owl#gmeditsk2
+Implicated node: http://dlejena/examples/aboxvalidation.owl#gmeditsk1
+
+	at dlejena.DLEJenaReasoner.validateABox(DLEJenaReasoner.java:386)
+	at examples.ABoxValidation.main(ABoxValidation.java:49)

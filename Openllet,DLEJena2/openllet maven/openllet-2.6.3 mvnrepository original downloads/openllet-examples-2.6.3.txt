@@ -1,0 +1,3 @@
+https://mvnrepository.com/artifact/com.github.galigator.openllet
+https://mvnrepository.com/artifact/com.github.galigator.openllet/openllet-examples
+https://mvnrepository.com/artifact/com.github.galigator.openllet/openllet-examples/2.6.3

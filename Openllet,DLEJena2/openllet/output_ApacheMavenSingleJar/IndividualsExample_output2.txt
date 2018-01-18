@@ -1,0 +1,34 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" org.apache.jena.shared.JenaException: org.xml.sax.SAXParseException; systemId: http://www.mindswap.org/2004/owl/mindswappers#; lineNumber: 12; columnNumber: 3; The element type "link" must be terminated by the matching end-tag "</link>".
+	at org.apache.jena.rdf.model.impl.RDFDefaultErrorHandler.fatalError(RDFDefaultErrorHandler.java:60)
+	at org.apache.jena.rdfxml.xmlinput.impl.ARPSaxErrorHandler.fatalError(ARPSaxErrorHandler.java:47)
+	at org.apache.jena.rdfxml.xmlinput.impl.XMLHandler.warning(XMLHandler.java:199)
+	at org.apache.jena.rdfxml.xmlinput.impl.XMLHandler.fatalError(XMLHandler.java:229)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.jena.rdfxml.xmlinput.impl.RDFXMLParser.parse(RDFXMLParser.java:150)
+	at org.apache.jena.rdfxml.xmlinput.JenaReader.read(JenaReader.java:166)
+	at org.apache.jena.rdfxml.xmlinput.JenaReader.read(JenaReader.java:153)
+	at org.apache.jena.rdfxml.xmlinput.JenaReader.read(JenaReader.java:224)
+	at org.apache.jena.rdfxml.xmlinput.JenaReader.read(JenaReader.java:92)
+	at org.apache.jena.rdf.model.impl.ModelCom.read(ModelCom.java:263)
+	at org.apache.jena.ontology.impl.OntModelImpl.readDelegate(OntModelImpl.java:3090)
+	at org.apache.jena.ontology.impl.OntModelImpl.read(OntModelImpl.java:2182)
+	at org.apache.jena.ontology.impl.OntModelImpl.read(OntModelImpl.java:2106)
+	at openllet.examples.IndividualsExample.runWithJena(IndividualsExample.java:60)
+	at openllet.examples.IndividualsExample.main(IndividualsExample.java:46)
+Caused by: org.xml.sax.SAXParseException; systemId: http://www.mindswap.org/2004/owl/mindswappers#; lineNumber: 12; columnNumber: 3; The element type "link" must be terminated by the matching end-tag "</link>".
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	... 23 more

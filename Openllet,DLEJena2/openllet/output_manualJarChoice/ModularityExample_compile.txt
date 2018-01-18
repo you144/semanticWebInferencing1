@@ -1,0 +1,25 @@
+openllet\examples\ModularityExample.java:49: error: cannot access Provider
+		final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		                                             ^
+  class file for com.google.inject.Provider not found
+openllet\examples\ModularityExample.java:56: error: cannot find symbol
+				" axioms, " + ontology.classesInSignature().count() + //
+				                      ^
+  symbol:   method classesInSignature()
+  location: variable ontology of type OWLOntology
+openllet\examples\ModularityExample.java:57: error: cannot find symbol
+				" classes, and " + ontology.objectPropertiesInSignature().count() + //
+				                           ^
+  symbol:   method objectPropertiesInSignature()
+  location: variable ontology of type OWLOntology
+openllet\examples\ModularityExample.java:93: error: cannot find symbol
+				" axioms, " + moduleOnt.classesInSignature().count() + //
+				                       ^
+  symbol:   method classesInSignature()
+  location: variable moduleOnt of type OWLOntology
+openllet\examples\ModularityExample.java:94: error: cannot find symbol
+				" classes, and " + moduleOnt.objectPropertiesInSignature().count() + //
+				                            ^
+  symbol:   method objectPropertiesInSignature()
+  location: variable moduleOnt of type OWLOntology
+5 errors

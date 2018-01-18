@@ -1,0 +1,37 @@
+Defining the ontology...
+ - Class created: Publication
+ - Class created: Document
+ - Subclass relationship: Publication is subclass of Document
+ - Individual of Publication created: myThesis
+done!
+
+Initializing DLEJena... done!
+
+Get the inferred types of the instance myThesis
+ - Document
+ - Publication
+ - Thing
+
+ABOX UPDATE:  - Individual of Publication created: dle-iswc08
+
+Get the inferred types of the instance dle-iswc08
+ - Document
+ - Thing
+ - Publication
+
+TBOX UPDATE:  - Class created: Thesis
+TBOX UPDATE:  - Class created: PhDThesis
+TBOX UPDATE:  - Subclass relationship: Thesis is subclass of Publication
+TBOX UPDATE:  - Subclass relationship: PhDThesis is subclass of Thesis
+
+ABox entailments before updating the TBox : 38
+ABox entailments after the TBox update: 51
+
+ABOX UPDATE:  - Individual of PhDThesis created: myThesis
+
+Get the inferred types of the instance myThesis
+ - Thesis
+ - Document
+ - PhDThesis
+ - Publication
+ - Thing

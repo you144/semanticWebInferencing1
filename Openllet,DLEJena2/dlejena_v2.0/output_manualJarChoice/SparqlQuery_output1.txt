@@ -1,0 +1,14 @@
+
+Wines with strong flavor:
+ - MountEdenVineyardEstatePinotNoir
+ - SeanThackreySiriusPetiteSyrah
+ - CotturiZinfandel
+ - CorbansSauvignonBlanc
+ - ChateauDYchemSauterne
+ - SchlossRothermelTrochenbierenausleseRiesling
+ - KalinCellarsSemillon
+ - FormanCabernetSauvignon
+ - MountadamChardonnay
+ - CortonMontrachetWhiteBurgundy
+ - SantaCruzMountainVineyardCabernetSauvignon
+ - CorbansPrivateBinSauvignonBlanc

@@ -1,0 +1,11 @@
+Classifying 5 elements
+Classifying:  20% complete in 00:00Classifying:  40% complete in 00:00Classifying:  60% complete in 00:00Classifying:  80% complete in 00:00Classifying:  100% complete in 00:00
+Classifying finished in 00:00
+Realizing 5 elements
+Realizing:  20% complete in 00:00Realizing:  40% complete in 00:00Realizing:  60% complete in 00:00Realizing:  100% complete in 00:00
+Realizing finished in 00:00
+Jan 18, 2018 3:16:31 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature
+WARNING: Unsupported axiom: Ignoring equivalentClass axiom because the object is not a class http://dlejena/examples/createOntology.owl#Sex owl:equivalentClass bnode(-7ecddfb4:161077b82aa:-7ff3)
+Classifying 5 elements
+Classifying:  20% complete in 00:00Classifying:  40% complete in 00:00Classifying:  60% complete in 00:00Classifying:  80% complete in 00:00Classifying:  100% complete in 00:00
+Classifying finished in 00:00

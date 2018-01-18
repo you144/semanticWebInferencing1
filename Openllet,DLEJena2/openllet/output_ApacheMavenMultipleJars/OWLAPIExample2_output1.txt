@@ -1,0 +1,66 @@
+
+ Classes of <ind_i>
+owl:Thing
+<cls_a>
+
+ Classes of <ind_j>
+owl:Thing
+<cls_f>
+<cls_g>
+<cls_d>
+<cls_e>
+<cls_b>
+
+ Classes of <ind_k>
+owl:Thing
+<cls_c>
+
+ Value of i-u->?
+<ind_j>
+
+ Individuals of a simple Class expression (negation of cls_e)
+
+ Classes of <ind_i>
+owl:Thing
+<cls_a>
+
+ The axioms are now. 
+ClassAssertion(<cls_a> <ind_i>)
+ClassAssertion(<cls_b> <ind_j>)
+ClassAssertion(<cls_c> <ind_k>)
+ClassAssertion(<cls_d> <ind_j>)
+ClassAssertion(<cls_e> <ind_j>)
+ClassAssertion(<cls_f> <ind_j>)
+ClassAssertion(<cls_g> <ind_j>)
+ObjectPropertyAssertion(<prop_u> <ind_i> <ind_j>)
+ObjectPropertyAssertion(<prop_v> <ind_j> <ind_k>)
+ObjectPropertyDomain(<prop_v> <cls_e>)
+ObjectPropertyDomain(<prop_v> <cls_f>)
+ObjectPropertyDomain(<prop_w> <cls_g>)
+ObjectPropertyRange(<prop_u> <cls_d>)
+ObjectPropertyRange(<prop_u> <cls_e>)
+SubClassOf(ObjectIntersectionOf(<cls_d> <cls_f>) <cls_g>)
+
+ Playing with subClassing 
+owl:Thing
+<cls_g>
+
+ The axioms are now. 
+ClassAssertion(<cls_a> <ind_i>)
+ClassAssertion(<cls_b> <ind_j>)
+ClassAssertion(<cls_c> <ind_k>)
+ClassAssertion(<cls_d> <ind_j>)
+ClassAssertion(<cls_e> <ind_j>)
+ClassAssertion(<cls_f> <ind_j>)
+ClassAssertion(<cls_g> <ind_j>)
+ClassAssertion(<cls_g> <ind_l>)
+ClassAssertion(owl:Thing <ind_l>)
+ObjectPropertyAssertion(<prop_u> <ind_i> <ind_j>)
+ObjectPropertyAssertion(<prop_v> <ind_j> <ind_k>)
+ObjectPropertyAssertion(<prop_w> <ind_l> <faf99bf2-f123-4302-9007-3c29852fa6e0>)
+ObjectPropertyDomain(<prop_v> <cls_e>)
+ObjectPropertyDomain(<prop_v> <cls_f>)
+ObjectPropertyDomain(<prop_w> <cls_g>)
+ObjectPropertyRange(<prop_u> <cls_d>)
+ObjectPropertyRange(<prop_u> <cls_e>)
+SubClassOf(ObjectIntersectionOf(<cls_d> <cls_f>) <cls_g>)

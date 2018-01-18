@@ -1,0 +1,7 @@
+https://github.com/Galigator/openllet
+
+Download the whole project. Then open the downloaded openllet-2.6.2.zip
+and look in the following folder for the java examples:
+
+openllet-2.6.2\examples\src\main\java\openllet\examples\
+

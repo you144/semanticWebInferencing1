@@ -1,0 +1,14 @@
+examples\Updates.java:10: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\Updates.java:65: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class Updates
+examples\Updates.java:65: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class Updates
+3 errors

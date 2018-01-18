@@ -1,0 +1,18 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Extracting 3161 elements
+Extracting:  0% complete in 00:00Extracting:  10% complete in 00:00Extracting:  20% complete in 00:00Extracting:  30% complete in 00:00Extracting:  40% complete in 00:00Extracting:  50% complete in 00:00Extracting:  60% complete in 00:00Extracting:  70% complete in 00:00Extracting:  80% complete in 00:00Extracting:  90% complete in 00:00Extracting:  100% complete in 00:00
+Extracting finished in 00:00
+Extracting 1 elements
+Extracting:  100% complete in 00:00
+Extracting finished in 00:00
+Extracting 1 elements
+Extracting:  100% complete in 00:00
+Extracting finished in 00:00
+Extracting 2750 elements
+Extracting:  0% complete in 00:00Extracting:  10% complete in 00:00Extracting:  20% complete in 00:00Extracting:  30% complete in 00:00Extracting:  40% complete in 00:00Extracting:  50% complete in 00:00Extracting:  60% complete in 00:00Extracting:  70% complete in 00:00Extracting:  80% complete in 00:00Extracting:  90% complete in 00:00Extracting:  100% complete in 00:00
+Extracting finished in 00:00
+Extracting 2750 elements
+Extracting:  0% complete in 00:00Extracting:  10% complete in 00:00Extracting:  20% complete in 00:00Extracting:  30% complete in 00:00Extracting:  40% complete in 00:00Extracting:  50% complete in 00:00Extracting:  60% complete in 00:00Extracting:  70% complete in 00:00Extracting:  80% complete in 00:00Extracting:  90% complete in 00:00Extracting:  100% complete in 00:00
+Extracting finished in 00:00

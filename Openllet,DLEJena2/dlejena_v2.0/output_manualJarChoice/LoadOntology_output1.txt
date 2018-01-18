@@ -1,0 +1,85 @@
+OWLAPI: Separating TBox from ABox axioms...
+ -completed (Time: 310.0 ms)
+Pellet: Performing TBox inferencing...
+ -completed (Time: 103.0 ms)
+DLEJena: Generating entailments...
+ -completed (Time: 75.0 ms)
+Jena: Performing ABox reasoning...
+ -completed (Time: 3.0 ms)
+
+-------------------------
+The ABox entailment rules
+-------------------------
+[ eq-sym: (?A owl:sameAs ?B) -> (?B owl:sameAs ?A) ]
+[ eq-trans: (?A owl:sameAs ?B) (?B owl:sameAs ?C) -> (?A owl:sameAs ?C) ]
+[ eq-rep-s: (?X owl:sameAs ?Y) notEqual(?X ?Y) (?X ?P ?V) -> (?Y ?P ?V) ]
+[ eq-rep-o: (?X owl:sameAs ?Y) notEqual(?X ?Y) (?V ?P ?X) -> (?V ?P ?Y) ]
+[ eq-all: (?X rdf:type owl:Thing) -> (?X owl:sameAs ?X) ]
+[ cls-oo: (?C owl:oneOf ?l) -> listMapAsSubject(?l rdf:type ?C) ]
+[ distinct: (?w owl:distinctMembers ?L) -> assertDisjointPairs(?L) ]
+[ eq-diff1: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:differentFrom ?Y) (?X owl:sameAs ?Y) -> (?X rb:violation 'error('conflict' 'Two individuals both same and different, may be due to disjoint classes or functional properties' ?Y)'^^urn:x-hp-jena:Functor) ]
+[ validationIndiv3: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Nothing) -> (?I rb:violation 'error('conflict' 'Individual a member of Nothing' ?I)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-sco: (?X rdf:type -2d01dadf:161077bb1ca:-7ffa) -> (?X rdf:type -2d01dadf:161077bb1ca:-7ff8) ]
+[ D_cax-sco: (?X rdf:type -2d01dadf:161077bb1ca:-7ffa) -> (?X rdf:type http://dlejena/examples/man.owl#Human) ]
+[ D_cls-com: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X rdf:type owl:Thing) (?X rdf:type owl:Nothing) -> (?X rb:violation 'error('inconsistency' 'Complement classes' owl:Thing owl:Nothing)'^^urn:x-hp-jena:Functor) ]
+[ D_cls-com: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X rdf:type owl:Nothing) (?X rdf:type owl:Thing) -> (?X rb:violation 'error('inconsistency' 'Complement classes' owl:Nothing owl:Thing)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-sco: (?X rdf:type http://dlejena/examples/man.owl#Man) -> (?X rdf:type owl:Thing) ]
+[ D_cax-sco: (?X rdf:type http://dlejena/examples/man.owl#Man) -> (?X rdf:type http://dlejena/examples/man.owl#Human) ]
+[ D_cax-sco: (?X rdf:type http://dlejena/examples/man.owl#Human) -> (?X rdf:type owl:Thing) ]
+[ D_cax-sco: (?X rdf:type owl:Nothing) -> (?X rdf:type owl:Thing) ]
+[ D_cax-sco: (?X rdf:type owl:Nothing) -> (?X rdf:type http://dlejena/examples/man.owl#Man) ]
+[ D_cax-sco: (?X rdf:type owl:Nothing) -> (?X rdf:type http://dlejena/examples/man.owl#Human) ]
+[ D_cax-sco: (?X rdf:type owl:Nothing) -> (?X rdf:type http://dlejena/examples/man.owl#Sex) ]
+[ D_cax-sco: (?X rdf:type http://dlejena/examples/man.owl#Sex) -> (?X rdf:type owl:Thing) ]
+[ D_spo1: (?X owl:bottomObjectProperty ?Y) -> (?X http://dlejena/examples/man.owl#hasSex ?Y) ]
+[ D_spo1: (?X owl:bottomObjectProperty ?Y) -> (?X owl:topObjectProperty ?Y) ]
+[ D_spo1: (?X http://dlejena/examples/man.owl#hasSex ?Y) -> (?X owl:topObjectProperty ?Y) ]
+[ D_spo1: (?X owl:bottomDataProperty ?Y) -> (?X owl:topDataProperty ?Y) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:bottomObjectProperty ?Y) (?Y owl:bottomObjectProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:bottomObjectProperty owl:bottomObjectProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:bottomObjectProperty ?Y) (?Y http://dlejena/examples/man.owl#hasSex ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:bottomObjectProperty http://dlejena/examples/man.owl#hasSex)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:bottomObjectProperty ?Y) (?Y owl:topObjectProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:bottomObjectProperty owl:topObjectProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:topDataProperty ?Y) (?Y owl:bottomDataProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:topDataProperty owl:bottomDataProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X http://dlejena/examples/man.owl#hasSex ?Y) (?Y owl:bottomObjectProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X http://dlejena/examples/man.owl#hasSex owl:bottomObjectProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:bottomDataProperty ?Y) (?Y owl:topDataProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:bottomDataProperty owl:topDataProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:bottomDataProperty ?Y) (?Y owl:bottomDataProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:bottomDataProperty owl:bottomDataProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_pdw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:topObjectProperty ?Y) (?Y owl:bottomObjectProperty ?X) -> (?X rb:violation 'error('disjoint property violation' 'The properties are disjoint' ?X owl:topObjectProperty owl:bottomObjectProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_prp-dom: (?X owl:bottomObjectProperty ?Y) -> (?X rdf:type http://dlejena/examples/man.owl#Human) ]
+[ D_prp-dom: (?X owl:bottomObjectProperty ?Y) -> (?X rdf:type http://dlejena/examples/man.owl#Sex) ]
+[ D_prp-dom: (?X http://dlejena/examples/man.owl#hasSex ?Y) -> (?X rdf:type http://dlejena/examples/man.owl#Human) ]
+[ D_cls-hv1: (?X rdf:type -2d01dadf:161077bb1ca:-7ff8) -> (?X http://dlejena/examples/man.owl#hasSex http://dlejena/examples/man.owl#male) ]
+[ D_cls-hv2: (?X http://dlejena/examples/man.owl#hasSex http://dlejena/examples/man.owl#male) -> (?X rdf:type -2d01dadf:161077bb1ca:-7ff8) ]
+[ D_prp-rng: (?X owl:bottomObjectProperty ?Y) -> (?Y rdf:type http://dlejena/examples/man.owl#Human) ]
+[ D_prp-rng: (?X owl:bottomObjectProperty ?Y) -> (?Y rdf:type http://dlejena/examples/man.owl#Sex) ]
+[ D_prp-rng: (?X http://dlejena/examples/man.owl#hasSex ?Y) -> (?Y rdf:type http://dlejena/examples/man.owl#Sex) ]
+[ D_cax-eqc1: (?X rdf:type http://dlejena/examples/man.owl#Man) -> (?X rdf:type -2d01dadf:161077bb1ca:-7ffa) ]
+[ D_cax-eqc2: (?X rdf:type -2d01dadf:161077bb1ca:-7ffa) -> (?X rdf:type http://dlejena/examples/man.owl#Man) ]
+[ D_cax-eqc1: (?X rdf:type http://dlejena/examples/man.owl#Sex) -> (?X rdf:type -2d01dadf:161077bb1ca:-7ff6) ]
+[ D_cax-eqc2: (?X rdf:type -2d01dadf:161077bb1ca:-7ff6) -> (?X rdf:type http://dlejena/examples/man.owl#Sex) ]
+[ D_prp-irp: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?X owl:bottomObjectProperty ?Y) equal(?X ?Y) -> (?X rb:violation 'error('irreflexive violation' 'The property is irreflexive' ?X owl:bottomObjectProperty)'^^urn:x-hp-jena:Functor) ]
+[ D_prp-trp: (?X owl:bottomObjectProperty ?Y) (?Y owl:bottomObjectProperty ?Z) -> (?X owl:bottomObjectProperty ?Z) ]
+[ D_prp-trp: (?X owl:topObjectProperty ?Y) (?Y owl:topObjectProperty ?Z) -> (?X owl:topObjectProperty ?Z) ]
+[ D_prp-ifp: (?A owl:bottomObjectProperty ?B) (?C owl:bottomObjectProperty ?B) notEqual(?A ?C) -> (?A owl:sameAs ?C) ]
+[ D_prp-fp: (?A owl:bottomObjectProperty ?B) notLiteral(?B) (?A owl:bottomObjectProperty ?C) notLiteral(?C) notEqual(?B ?C) -> (?B owl:sameAs ?C) ]
+[ D_prp-fp: (?A owl:bottomDataProperty ?B) notLiteral(?B) (?A owl:bottomDataProperty ?C) notLiteral(?C) notEqual(?B ?C) -> (?B owl:sameAs ?C) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Thing) (?I rdf:type owl:Nothing) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' owl:Thing owl:Nothing)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type http://dlejena/examples/man.owl#Man) (?I rdf:type owl:Nothing) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' http://dlejena/examples/man.owl#Man owl:Nothing)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type http://dlejena/examples/man.owl#Human) (?I rdf:type owl:Nothing) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' http://dlejena/examples/man.owl#Human owl:Nothing)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Nothing) (?I rdf:type owl:Thing) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' owl:Nothing owl:Thing)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Nothing) (?I rdf:type http://dlejena/examples/man.owl#Man) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' owl:Nothing http://dlejena/examples/man.owl#Man)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Nothing) (?I rdf:type http://dlejena/examples/man.owl#Human) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' owl:Nothing http://dlejena/examples/man.owl#Human)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Nothing) (?I rdf:type owl:Nothing) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' owl:Nothing owl:Nothing)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type owl:Nothing) (?I rdf:type http://dlejena/examples/man.owl#Sex) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' owl:Nothing http://dlejena/examples/man.owl#Sex)'^^urn:x-hp-jena:Functor) ]
+[ D_cax-dw: (?v rb:validation 'on()'^^urn:x-hp-jena:Functor) (?I rdf:type http://dlejena/examples/man.owl#Sex) (?I rdf:type owl:Nothing) -> (?I rb:violation 'error('conflict' 'Individual a member of disjoint classes' http://dlejena/examples/man.owl#Sex owl:Nothing)'^^urn:x-hp-jena:Functor) ]
+[ D_intersection: (?X rdf:type http://dlejena/examples/man.owl#Human) (?X rdf:type -2d01dadf:161077bb1ca:-7ff8) -> (?X rdf:type -2d01dadf:161077bb1ca:-7ffa) ]
+
+The named superclasses of the class Man:
+ - http://dlejena/examples/man.owl#Human
+ - http://www.w3.org/2002/07/owl#Thing
+
+All the named classes where gmeditsk belongs to:
+ - http://dlejena/examples/man.owl#Man
+ - http://www.w3.org/2002/07/owl#Thing
+ - http://dlejena/examples/man.owl#Human
+
+gmeditsk has sex: 
+ - http://dlejena/examples/man.owl#male

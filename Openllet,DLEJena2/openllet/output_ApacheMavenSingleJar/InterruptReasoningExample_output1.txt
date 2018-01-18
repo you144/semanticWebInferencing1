@@ -1,0 +1,14 @@
+Parsing the ontology...finished
+
+Consistency Timeout: 5000ms
+Checking consistency...finished in 2624
+
+Classify Timeout: 50000ms
+Classifying...finished in 3058ms
+Classified: true
+
+Realize Timeout: 1000ms
+Realizing...interrupted after 1327ms
+Realized: false
+
+Query Timeout: 0ms

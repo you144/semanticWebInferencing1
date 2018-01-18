@@ -1,0 +1,12 @@
+
+The named superclasses of the class Man:
+ - http://dlejena/examples/createOntology.owl#Human
+ - http://www.w3.org/2002/07/owl#Thing
+
+All the named classes where gmeditsk belongs to:
+ - http://dlejena/examples/createOntology.owl#Man
+ - http://dlejena/examples/createOntology.owl#Human
+ - http://www.w3.org/2002/07/owl#Thing
+
+gmeditsk has sex: 
+ - http://dlejena/examples/createOntology.owl#male

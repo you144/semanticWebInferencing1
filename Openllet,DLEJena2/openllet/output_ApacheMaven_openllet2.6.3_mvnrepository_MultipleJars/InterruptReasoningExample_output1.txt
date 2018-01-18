@@ -1,0 +1,4 @@
+Parsing the ontology...finished
+
+Consistency Timeout: 5000ms
+Checking consistency...

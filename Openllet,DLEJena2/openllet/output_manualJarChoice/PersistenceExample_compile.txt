@@ -1,0 +1,19 @@
+openllet\examples\PersistenceExample.java:132: error: cannot find symbol
+				classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+				                                    ^
+  symbol:   method entities()
+  location: interface NodeSet<OWLClass>
+openllet\examples\PersistenceExample.java:132: error: invalid method reference
+				classifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) + "\n");
+				                                                    ^
+  non-static method toString() cannot be referenced from a static context
+openllet\examples\PersistenceExample.java:134: error: cannot find symbol
+				((restoredClassifier != null) ? restoredClassifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) : "") + "\n");
+				                                                                            ^
+  symbol:   method entities()
+  location: interface NodeSet<OWLClass>
+openllet\examples\PersistenceExample.java:134: error: invalid method reference
+				((restoredClassifier != null) ? restoredClassifier.getSubClasses(pain, true).entities().map(OWLClass::toString).collect(Collectors.joining(",")) : "") + "\n");
+				                                                                                            ^
+  non-static method toString() cannot be referenced from a static context
+4 errors

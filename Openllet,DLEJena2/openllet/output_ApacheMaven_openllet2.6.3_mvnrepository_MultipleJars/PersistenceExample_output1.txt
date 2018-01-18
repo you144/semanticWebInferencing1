@@ -1,0 +1,6 @@
+Saving the state of the classifier to the file ... done.
+Reading the state of the classifier back from the file ... done.
+[Original classifier] Subclasses of <http://www.co-ode.org/ontologies/galen#Pain>: <http://www.co-ode.org/ontologies/galen#Headache>,<http://www.co-ode.org/ontologies/galen#Tenderness>,<http://www.co-ode.org/ontologies/galen#AbdominalPain>,<http://www.co-ode.org/ontologies/galen#ChestPain>,<http://www.co-ode.org/ontologies/galen#Dysuria>,<http://www.co-ode.org/ontologies/galen#LoinPain>
+
+[Restored classifier] Subclasses of <http://www.co-ode.org/ontologies/galen#Pain>: <http://www.co-ode.org/ontologies/galen#Headache>,<http://www.co-ode.org/ontologies/galen#Tenderness>,<http://www.co-ode.org/ontologies/galen#AbdominalPain>,<http://www.co-ode.org/ontologies/galen#ChestPain>,<http://www.co-ode.org/ontologies/galen#Dysuria>,<http://www.co-ode.org/ontologies/galen#LoinPain>
+

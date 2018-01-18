@@ -1,0 +1,14 @@
+examples\CustomTemplate.java:7: error: package dlejena does not exist
+import dlejena.DLEJenaReasoner;
+              ^
+examples\CustomTemplate.java:47: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+        ^
+  symbol:   class DLEJenaReasoner
+  location: class CustomTemplate
+examples\CustomTemplate.java:47: error: cannot find symbol
+        DLEJenaReasoner dle = new DLEJenaReasoner();
+                                  ^
+  symbol:   class DLEJenaReasoner
+  location: class CustomTemplate
+3 errors

@@ -1,0 +1,17 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.jena.query.ARQ.isTrue(ARQ.java:634)
+	at org.apache.jena.sparql.lang.ParserBase.<init>(ParserBase.java:291)
+	at org.apache.jena.sparql.lang.SPARQLParserBase.<init>(SPARQLParserBase.java:43)
+	at org.apache.jena.sparql.lang.sparql_11.SPARQLParser11Base.<init>(SPARQLParser11Base.java:22)
+	at org.apache.jena.sparql.lang.sparql_11.SPARQLParser11.<init>(SPARQLParser11.java:4974)
+	at org.apache.jena.sparql.lang.ParserSPARQL11.perform(ParserSPARQL11.java:91)
+	at org.apache.jena.sparql.lang.ParserSPARQL11.parse$(ParserSPARQL11.java:52)
+	at org.apache.jena.sparql.lang.SPARQLParser.parse(SPARQLParser.java:34)
+	at org.apache.jena.query.QueryFactory.parse(QueryFactory.java:147)
+	at org.apache.jena.query.QueryFactory.create(QueryFactory.java:79)
+	at org.apache.jena.query.QueryFactory.create(QueryFactory.java:52)
+	at org.apache.jena.query.QueryFactory.create(QueryFactory.java:40)
+	at openllet.examples.BnodeQueryExample.main(BnodeQueryExample.java:62)
