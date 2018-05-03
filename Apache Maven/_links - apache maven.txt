@@ -57,6 +57,8 @@ Unix-based Operating System (Linux, Solaris and Mac OS X) Tips
 
 https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 
+Control panel, System, Advanced system settings, Environment Variables, "System Variables" section
+
 (System variables)
 JAVA_HOME C:\Program Files\Java\jdk-9.0.4
 M2_HOME D:\Programming\apache-maven-3.5.3\
