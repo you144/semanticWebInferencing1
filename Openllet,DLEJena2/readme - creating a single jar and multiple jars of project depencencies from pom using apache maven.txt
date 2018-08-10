@@ -1,3 +1,16 @@
+Readme - Creating a single jar and multiple jars of project depencencies from pom using Apache Maven
+
+Written by Jevan Pipitone
+18 January 2018
+
+Contact Details
+Website: http://www.jevan.com.au
+LinkedIn: http://www.linkedin.com/in/jevanpipitone
+Facebook: http://www.facebook.com/jevanpipitone
+GitHub: http://www.github.com/jevanpipitone
+
+------------------------------------------------------------
+
 1. To pom.xml add under project tag:
 
 <build>

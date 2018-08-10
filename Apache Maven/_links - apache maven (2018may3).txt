@@ -1,3 +1,16 @@
+Links - Apache Maven
+
+Written by Jevan Pipitone
+3 May 2018
+
+Contact Details
+Website: http://www.jevan.com.au
+LinkedIn: http://www.linkedin.com/in/jevanpipitone
+Facebook: http://www.facebook.com/jevanpipitone
+GitHub: http://www.github.com/jevanpipitone
+
+------------------------------------------------------------
+
 http://maven.apache.org/download.cgi
 http://maven.apache.org/ref/3.5.0/
 http://maven.apache.org/install.html

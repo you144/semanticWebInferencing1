@@ -1,3 +1,16 @@
+Readme - what to do with this project
+
+Written by Jevan Pipitone
+8 November 2017
+
+Contact Details
+Website: http://www.jevan.com.au
+LinkedIn: http://www.linkedin.com/in/jevanpipitone
+Facebook: http://www.facebook.com/jevanpipitone
+GitHub: http://www.github.com/jevanpipitone
+
+------------------------------------------------------------
+
 The aim of this particular folder is to get the dlejena2 and openllet 2.6.2 examples to compile
 and run successfully using java without an IDE.
 

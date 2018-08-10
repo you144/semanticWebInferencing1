@@ -1,3 +1,16 @@
+Readme - Creating a single jar using intellij maven to use from java
+
+Written by Jevan Pipitone
+7 November 2017
+
+Contact Details
+Website: http://www.jevan.com.au
+LinkedIn: http://www.linkedin.com/in/jevanpipitone
+Facebook: http://www.facebook.com/jevanpipitone
+GitHub: http://www.github.com/jevanpipitone
+
+------------------------------------------------------------
+
 Note: this has already been done. The description below is just for your information
 so that you can know what I did to have these files as it is now.
 
